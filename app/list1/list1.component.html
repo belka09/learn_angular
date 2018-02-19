@@ -1,8 +1,14 @@
-<h2>My List 1</h2>
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-</ul>
+<p>
+    <b>First Name: </b> {{ firstName }}
+</p>
+<p>
+    <b>Last Name: </b> {{ lastName }}
+</p>
+<br>
+<p>
+    <b>Full Name: </b> {{ getFullName() }}
+</p>
+
+<p>
+    <b>Evaluation and convertion to string - </b> {{ 1 + 1 + getFullName() }}
+</p>

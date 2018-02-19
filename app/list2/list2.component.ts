@@ -1,12 +1,15 @@
 import { Component } from "@angular/core";
 
-
+// Для использования относительных путей, необходимо добавить свойство moduleId и установить значение для свойства module.id
+// Данное свойство необходимо устанавливать в случае если в проекте используется загрузчик systemJS
 @Component({
     moduleId: module.id,
-    selector: "list1-component",
+    selector: "list-2",
     templateUrl: "./list2.component.html",
     styleUrls: ["./list2.component.css"]
 })
-export class List2Component { 
-
+export class List2Component {
+    imageSrc: string = "/app/images/angular.png";
+    imageTitle: string = "Data bindings in Angular 2";
+    flag: boolean = false;
 }

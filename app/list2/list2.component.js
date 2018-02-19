@@ -7,13 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+// Для использования относительных путей, необходимо добавить свойство moduleId и установить значение для свойства module.id
+// Данное свойство необходимо устанавливать в случае если в проекте используется загрузчик systemJS
 var List2Component = /** @class */ (function () {
     function List2Component() {
+        this.imageSrc = "/app/images/angular.png";
+        this.imageTitle = "Data bindings in Angular 2";
+        this.flag = false;
     }
     List2Component = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: "list1-component",
+            selector: "list-2",
             templateUrl: "./list2.component.html",
             styleUrls: ["./list2.component.css"]
         })
