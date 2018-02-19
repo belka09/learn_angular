@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
+<<<<<<< HEAD
 
+=======
+>>>>>>> feb6b132204f598bc809bfc27929a21021844bfb
 @Component({
     selector: "list-1",
     templateUrl: "app/list1/list1.component.html",
