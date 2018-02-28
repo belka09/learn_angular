@@ -13,7 +13,7 @@ export class List6Component{
     currentClasses: string = "";
     isAccentBorder: boolean = true;
     isErrorText: boolean = true;
-    isHighlighted: boolean = false;
+    isHighlighted: boolean = true;
 
 
 
@@ -32,7 +32,9 @@ export class List6Component{
         return this.firstName + ' ' + this.lastName;
     }
 
-
+    getDivColor(){
+        return 'green';
+    }
     toggleAllClasses(){
         if(this.currentClasses == ""){
             this.currentClasses = this.allClasses;

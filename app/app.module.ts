@@ -10,6 +10,7 @@ import { List4Component } from "./list 4/list4.component";
 import { SampleComponent } from "./list5/list5-host.component";
 import { List5Component } from "./list5/list5.component";
 import { List6Component } from "./list6/list6.component";
+import { List7Component } from "./list7/list7.component";
 
 @NgModule({
     imports: [
@@ -21,10 +22,11 @@ import { List6Component } from "./list6/list6.component";
             { path: "list4", component: List4Component },
             { path: "list5", component: List5Component },
             { path: "list6", component: List6Component },
+            { path: "list7", component: List7Component },
             { path: "", redirectTo: "list1", pathMatch: "full" }
         ])
     ],
-    declarations: [AppComponent, List1Component, List2Component , List3Component, List4Component, SampleComponent, List5Component, List6Component],
+    declarations: [AppComponent, List1Component, List2Component , List3Component, List4Component, SampleComponent, List5Component, List6Component, List7Component],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

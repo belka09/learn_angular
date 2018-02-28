@@ -17,6 +17,7 @@ var list4_component_1 = require("./list 4/list4.component");
 var list5_host_component_1 = require("./list5/list5-host.component");
 var list5_component_1 = require("./list5/list5.component");
 var list6_component_1 = require("./list6/list6.component");
+var list7_component_1 = require("./list7/list7.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -31,10 +32,11 @@ var AppModule = /** @class */ (function () {
                     { path: "list4", component: list4_component_1.List4Component },
                     { path: "list5", component: list5_component_1.List5Component },
                     { path: "list6", component: list6_component_1.List6Component },
+                    { path: "list7", component: list7_component_1.List7Component },
                     { path: "", redirectTo: "list1", pathMatch: "full" }
                 ])
             ],
-            declarations: [app_component_1.AppComponent, list1_component_1.List1Component, list2_component_1.List2Component, list3_component_1.List3Component, list4_component_1.List4Component, list5_host_component_1.SampleComponent, list5_component_1.List5Component, list6_component_1.List6Component],
+            declarations: [app_component_1.AppComponent, list1_component_1.List1Component, list2_component_1.List2Component, list3_component_1.List3Component, list4_component_1.List4Component, list5_host_component_1.SampleComponent, list5_component_1.List5Component, list6_component_1.List6Component, list7_component_1.List7Component],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

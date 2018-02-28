@@ -16,7 +16,7 @@ var List6Component = /** @class */ (function () {
         this.currentClasses = "";
         this.isAccentBorder = true;
         this.isErrorText = true;
-        this.isHighlighted = false;
+        this.isHighlighted = true;
         this.imageSrc = '/app/images/angular.png';
         this.imageTitle = "Data binding in Angular 2";
         this.flag = true;
@@ -25,6 +25,9 @@ var List6Component = /** @class */ (function () {
     }
     List6Component.prototype.getFullName = function () {
         return this.firstName + ' ' + this.lastName;
+    };
+    List6Component.prototype.getDivColor = function () {
+        return 'green';
     };
     List6Component.prototype.toggleAllClasses = function () {
         if (this.currentClasses == "") {
