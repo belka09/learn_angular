@@ -15,3 +15,19 @@
 
 <img [src]="imageSrc" [title]="imageTitle">
 
+
+<input type="checkbox" readonly [checked]='flag' /> flag
+
+
+<div [class]="currentClasses">Hello world 1</div>
+<button (click)="toggleAllClasses()">Toggle All Classes</button>
+
+<hr />
+
+<div
+    [class.accent-border]="isAccentBorder"
+    [class.error-text]="isErrorText"
+    [class.highlghted]="isHighlighted" >
+
+    Hello world 2
+</div>

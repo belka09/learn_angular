@@ -12,17 +12,34 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var List6Component = /** @class */ (function () {
     function List6Component() {
+        this.allClasses = "accent-border error-text highlighted";
+        this.currentClasses = "";
+        this.isAccentBorder = true;
+        this.isErrorText = true;
+        this.isHighlighted = false;
+        this.imageSrc = '/app/images/angular.png';
+        this.imageTitle = "Data binding in Angular 2";
+        this.flag = true;
         this.firstName = "Ivan";
         this.lastName = "Ivanov";
     }
     List6Component.prototype.getFullName = function () {
         return this.firstName + ' ' + this.lastName;
     };
+    List6Component.prototype.toggleAllClasses = function () {
+        if (this.currentClasses == "") {
+            this.currentClasses = this.allClasses;
+        }
+        else {
+            this.currentClasses = "";
+        }
+    };
     List6Component = __decorate([
         core_1.Component({
             moduleId: module.id,
             templateUrl: "./list6.component.html",
-            selector: 'list6'
+            selector: 'list6',
+            styleUrls: ["./list6.component.css"]
         }),
         __metadata("design:paramtypes", [])
     ], List6Component);
